@@ -1,4 +1,4 @@
-name: publish
+name: Deploy library on NPM
 
 on:
   release:
@@ -15,7 +15,7 @@ jobs:
     - name: Push package to npmjs.com
       uses: actions/setup-node@v1
       with:
-        node-version: 14
+        node-version: 16
         registry-url: https://registry.npmjs.org/
 
     - run: npm install
