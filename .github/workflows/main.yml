@@ -1,7 +1,9 @@
 name: CI for Relaying-Services-SDK
+
 on: [push]
+
 jobs:
-    test:
+    build:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
